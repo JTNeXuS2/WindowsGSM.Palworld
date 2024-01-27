@@ -1,53 +1,26 @@
 #include <Windows.h>
 #include <iostream>
+#include <string>
 
-//получаем аргументы запуска для последующей передачи дочернему процессу
-std::wstring GetCommandLineArguments()
+int wmain(int argc, wchar_t* argv[])
 {
-	LPWSTR* argv;
-	int argc;
-
-	argv = CommandLineToArgvW(GetCommandLineW(), &argc);
+	// Путь к DLL-файлу для инжекции
+	const char* dllPath = "UE4SS.dll";
+	// Получаем все аргументы при запуске
 	std::wstring arguments;
-
 	for (int i = 1; i < argc; i++)
 	{
 		arguments += argv[i];
 		arguments += L" ";
 	}
-
-	LocalFree(argv);
-
-	return arguments;
-}
-
-int main(int argc, wchar_t* argv[])
-{
-
-	// Получение пути к текущему исполняемому файлу
-	char modulePath[MAX_PATH];
-	GetModuleFileNameA(nullptr, modulePath, MAX_PATH);
-	// Получение пути к каталогу текущего исполняемого файла
-	std::string moduleDirectory = modulePath;
-	size_t lastBackslashIndex = moduleDirectory.find_last_of("\\");
-	std::string workingDirectory = moduleDirectory.substr(0, lastBackslashIndex);
-	// Путь к исполняемому файлу приложения
-	std::string applicationPath = workingDirectory + "\\PalServer-Win64-Test-Cmd.exe";
-	const char* applicationPathCStr = applicationPath.c_str();
-	// Путь к DLL-файлу для инжекции
-	const char* dllPath = "UE4SS.dll";
-	//Аргументы запуска
-	std::string commandLine = "Pal";
-	std::wstring additionalArgs = GetCommandLineArguments();
-	commandLine += " " + std::string(additionalArgs.begin(), additionalArgs.end());
+	//Добавляем аргументы запуска
+	std::wstring commandLine = L"PalServer-Win64-Test-Cmd.exe Pal " + arguments;
 
 	// Запуск приложения
-	STARTUPINFOA startupInfo = { sizeof(STARTUPINFOA) };
-	PROCESS_INFORMATION processInfo;
-	
+	STARTUPINFOW startupInfo{};
+	PROCESS_INFORMATION processInfo{};
 	printf("Create Process, trying to inject dll...\n");
-  //if (!CreateProcessA("PalServer-Win64-Test-Cmd.exe", const_cast<char*>(commandLine.c_str()), NULL, NULL, FALSE, CREATE_SUSPENDED, NULL, NULL, si, pi);
-	if (!CreateProcessA(applicationPathCStr, const_cast<char*>(commandLine.c_str()), nullptr, nullptr, FALSE, 0, nullptr, workingDirectory.c_str(), &startupInfo, &processInfo))
+	if (!CreateProcessW(NULL, const_cast<LPWSTR>(commandLine.c_str()), NULL, NULL, FALSE, 0, NULL, NULL, &startupInfo, &processInfo))
 	{
 		std::cout << "Failed to launch application" << std::endl;
 		return 1;
