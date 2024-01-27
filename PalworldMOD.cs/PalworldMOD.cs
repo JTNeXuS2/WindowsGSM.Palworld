@@ -16,11 +16,11 @@ namespace WindowsGSM.Plugins
         // - Plugin Details
         public Plugin Plugin = new Plugin
         {
-            name = "WindowsGSM.Palworld_MOD", // WindowsGSM.XXXX
+            name = "WindowsGSM.PalworldMOD", // WindowsGSM.XXXX
             author = "illidan",
             description = "WindowsGSM plugin for supporting Palworld UE4SS Dedicated Server",
-            version = "1.0",
-            url = "https://github.com/JTNeXuS2/WGSM-PalworldMOD.cs",
+            version = "1.1.1",
+            url = "https://github.com/JTNeXuS2/WindowsGSM.Palworld",
             color = "#1E8449" // Color Hex
         };
 
