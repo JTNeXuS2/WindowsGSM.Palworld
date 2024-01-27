@@ -1,7 +1,6 @@
-# WindowsGSM.Palworld
+# WindowsGSM.Palworld MOD
 🧩WindowsGSM plugin that provides Palworld Dedicated server
-
-## PLEASE ⭐STAR⭐ THE REPO IF YOU LIKE IT! THANKS!
+🧩WindowsGSM plugin that provides Palworld MOD Dedicated server through Launch PalServerUE4SSLauncher
 
 ### WindowsGSM Installation: 
 1. Download  WindowsGSM https://windowsgsm.com/ 
@@ -9,11 +8,11 @@
 4. Drag WindowsGSM.Exe into previoulsy created folder and execute it.
 
 ### Plugin Installation:
-1. Download [latest](https://github.com/ohmcodes/WindowsGSM.Palworld/releases/latest) release
-2. Extract then Move **Palworld.cs** folder to **plugins** folder
+1. Download [latest](https://github.com/JTNeXuS2/WindowsGSM.Palworld/releases/latest) release
+2. Extract then Move **PalworldMOD.cs** folder to **plugins** folder
 3. OR Press on the Puzzle Icon in the left bottom side and install this plugin by navigating to it and select the Zip File.
 4. Click **[RELOAD PLUGINS]** button or restart WindowsGSM
-5. Navigate "Servers" and Click "Install Game Server" and find "Palworld Dedicated Server [Palworld.cs]
+5. Navigate "Servers" and Click "Install Game Server" and find "Palworld Dedicated Server [PalworldMOD.cs]
 
 ### Official Documentation
 🗃️ [https://Palworld.fandom.com/wiki/Dedicated_servers](https://tech.palworldgame.com/dedicated-server-guide)
@@ -61,20 +60,6 @@ I've tried setting up PublicPort and PublicIP from here it looks like it gets ov
 - direct connect using ip:port
 - then go to Recent Servers click then input password
 
-### Blank Console?
-- Try Install Required Redist insde `_CommonRedist` folder
-- VC++ latest  DirectX offline version or latest
-- download and install steam launcher on your server will do the fix
-- you should be seeing `Setting breakpad minidump AppID = 1623730`
-
-### Stuck in loading?
-- Delete profile (For now now other fix)
-- To get the profile either open up a new server and let corrupted player to join and copy the save hex
-- Or backup all the players and start the server, let corrupted player to join and remember the hex and restore profiles then delete the corrupted profile save
-- if you have the player id you can conver it the hex https://www.binaryhexconverter.com/decimal-to-hex-converter
-- https://www.youtube.com/watch?v=fwLamiy30Qc&ab_channel=EpicLazyPanda 
-- It is advisable to put your pal in palbox and items in storages before logging out
-
 ### Other notes
 - Server listing - Please be aware that the whole world is listing their own dedicated server it is advisable to use direct connect instead looking for it. The game is not region lock and max 200 items
 - The game is currently in Early Access Stage WGSM and this plugin is not taking liability if something happens to your server, the app is only for managing your server easily
@@ -82,12 +67,14 @@ I've tried setting up PublicPort and PublicIP from here it looks like it gets ov
 
 ### Support
 [Palworld](https://discord.com/channels/505994577942151180/1196354410868117525)
-
 [WGSM](https://discord.com/channels/590590698907107340/645730252672335893)
 
-### Give Love!
-[Buy me a coffee](https://www.buymeacoffee.com/ohmcodes)
+### Donate for me
+https://yoomoney.ru/to/4100116619431314
+https://fkwallet.com  ID: F111999663
 
+### Give Love!
+[Buy ohmcodes a coffee](https://www.buymeacoffee.com/ohmcodes)
 [Paypal](https://www.paypal.com/donate/?business=8389QZ23QRDPE&no_recurring=0&item_name=Game+Server%2FTools+Community+Donations&currency_code=CAD)
 
 ### License
