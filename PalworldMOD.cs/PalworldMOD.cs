@@ -34,14 +34,14 @@ namespace WindowsGSM.Plugins
         public override string AppId => "2394010"; /* taken via https://steamdb.info/app/2394010/info/ */
 
         // - Game server Fixed variables
-        public override string StartPath => @"Pal\Binaries\Win64\PalServerUE4SSLauncher.exe"; // Game server start path 
+        public override string StartPath => File.Exists(@"Pal\Binaries\Win64\PalServerUE4SSLauncher.exe") ? @"Pal\Binaries\Win64\PalServerUE4SSLauncher.exe" : @"Pal\Binaries\Win64\PalServer-Win64-Test-Cmd.exe";
         public string FullName = "Palworld Dedicated Server"; // Game server FullName
         public bool AllowsEmbedConsole = true;  // Does this server support output redirect?
         public int PortIncrements = 0; // This tells WindowsGSM how many ports should skip after installation
         public object QueryMethod = new A2S(); // Query method should be use on current server type. Accepted value: null or new A2S() or new FIVEM() or new UT3()
 
         // - Game server default values
-        public string ServerName = "Palworld MOD";
+        public string ServerName = "Palworld";
         public string Defaultmap = ""; // Original (MapName)
         public string Maxplayers = "100"; // WGSM reads this as string but originally it is number or int (MaxPlayers)
         public string Port = "8211"; // WGSM reads this as string but originally it is number or int
@@ -103,6 +103,7 @@ namespace WindowsGSM.Plugins
                 p.OutputDataReceived += serverConsole.AddOutput;
                 p.ErrorDataReceived += serverConsole.AddOutput;
             }
+
             // Start Process
             try
             {
