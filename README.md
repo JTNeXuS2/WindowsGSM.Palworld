@@ -1,6 +1,6 @@
 # WindowsGSM.Palworld MOD
-1.WindowsGSM plugin (Palworld.cs) that provides Palworld Dedicated server
-2.WindowsGSM plugin (Palworld**MOD**.cs) that provides Palworld **MOD** Dedicated server through Launch PalServerUE4SSLauncher
+1.WindowsGSM plugin (Palworld.cs) that provides Palworld Dedicated server.
+2.WindowsGSM plugin (Palworld**MOD**.cs) that provides Palworld **MOD** Dedicated server through Launch PalServerUE4SSLauncher.
 
 ### WindowsGSM Installation: 
 1. Download  WindowsGSM https://windowsgsm.com/ 
