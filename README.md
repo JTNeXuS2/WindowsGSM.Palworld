@@ -7,13 +7,21 @@
 2. Create a Folder at a Location you wan't all Server to be Installed and Run.
 4. Drag WindowsGSM.Exe into previoulsy created folder and execute it.
 
-### Plugin Installation:
+### MOD Plugin Installation:
 1. Download [latest](https://github.com/JTNeXuS2/WindowsGSM.Palworld/releases/latest) release
 2. Extract then Move **PalworldMOD.cs** folder to **plugins** folder
 3. OR Press on the Puzzle Icon in the left bottom side and install this plugin by navigating to it and select the Zip File.
 4. Click **[RELOAD PLUGINS]** button or restart WindowsGSM
 5. Navigate "Servers" and Click "Install Game Server" and find "Palworld Dedicated Server [PalworldMOD.cs]
+6. Extract Palworld-Server-Modding.zip to serverfiles\**Pal\Binaries\Win64** folder
 
+### VANILLA Plugin Installation:
+1. Download [latest](https://github.com/JTNeXuS2/WindowsGSM.Palworld/releases/latest) release
+2. Extract then Move **Palworld.cs** folder to **plugins** folder
+3. OR Press on the Puzzle Icon in the left bottom side and install this plugin by navigating to it and select the Zip File.
+4. Click **[RELOAD PLUGINS]** button or restart WindowsGSM
+5. Navigate "Servers" and Click "Install Game Server" and find "Palworld Dedicated Server [Palworld.cs]
+   
 ### Official Documentation
 🗃️ [https://Palworld.fandom.com/wiki/Dedicated_servers](https://tech.palworldgame.com/dedicated-server-guide)
 
