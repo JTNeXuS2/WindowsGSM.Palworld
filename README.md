@@ -13,7 +13,7 @@
 3. OR Press on the Puzzle Icon in the left bottom side and install this plugin by navigating to it and select the Zip File.
 4. Click **[RELOAD PLUGINS]** button or restart WindowsGSM
 5. Navigate "Servers" and Click "Install Game Server" and find "Palworld Dedicated Server [PalworldMOD.cs]
-6. Extract [Palworld-Server-Modding.zip](https://github.com/JTNeXuS2/WindowsGSM.Palworld/releases/download/1.0.0/Palworld-Server-Modding.zip) to serverfiles\\**Pal\Binaries\Win64** folder
+6. Extract [Palworld-Server-Modding.zip](https://github.com/JTNeXuS2/WindowsGSM.Palworld/releases/download/1.1.1/Palworld-Server-Modding.zip) to serverfiles\\**Pal\Binaries\Win64** folder
 ### addition modding
 [UE4SS_Standard ](https://github.com/UE4SS-RE/RE-UE4SS/releases/latest) release
 
