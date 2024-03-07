@@ -82,7 +82,7 @@ I've tried setting up PublicPort and PublicIP from here it looks like it gets ov
 
 ### Donate for me
 https://yoomoney.ru/to/4100116619431314
-https://fkwallet.com  ID: F111999663
+https://fkwallet.io  ID: F7202415841873335
 
 ### Give Love!
 [Buy ohmcodes a coffee](https://www.buymeacoffee.com/ohmcodes)
