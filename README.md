@@ -80,9 +80,11 @@ I've tried setting up PublicPort and PublicIP from here it looks like it gets ov
 [Palworld](https://discord.com/channels/505994577942151180/1196354410868117525)
 [WGSM](https://discord.com/channels/590590698907107340/645730252672335893)
 
-### Donate for me
-https://yoomoney.ru/to/4100116619431314
+#### find me on discord [![Discord](https://discordapp.com/api/guilds/626106205122592769/widget.png?style=shield)](https://discord.gg/qYmBmDR)
+#### Donate for me
+#### [yoomoney](https://yoomoney.ru/to/4100116619431314)
 https://fkwallet.io  ID: F7202415841873335
+#### [boosty](https://boosty.to/_illidan_)
 
 ### Give Love!
 [Buy ohmcodes a coffee](https://www.buymeacoffee.com/ohmcodes)
