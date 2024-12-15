@@ -19,7 +19,7 @@ namespace WindowsGSM.Plugins
             name = "WindowsGSM.PalworldMOD", // WindowsGSM.XXXX
             author = "illidan",
             description = "WindowsGSM plugin for supporting Palworld UE4SS Dedicated Server",
-            version = "1.1.2",
+            version = "1.1.3",
             url = "https://github.com/JTNeXuS2/WindowsGSM.Palworld",
             color = "#1E8449" // Color Hex
         };
@@ -36,7 +36,7 @@ namespace WindowsGSM.Plugins
         // - Game server Fixed variables
         public override string StartPath => File.Exists(Functions.ServerPath.GetServersServerFiles(_serverData.ServerID, @"Pal\Binaries\Win64\PalServerUE4SSLauncher.exe"))
             ? @"Pal\Binaries\Win64\PalServerUE4SSLauncher.exe"
-            : @"Pal\Binaries\Win64\PalServer-Win64-Test-Cmd.exe";
+            : @"Pal\Binaries\Win64\PalServer-Win64-Shipping-Cmd.exe";
         public string FullName = "Palworld Dedicated Server"; // Game server FullName
         public bool AllowsEmbedConsole = true;  // Does this server support output redirect?
         public int PortIncrements = 1; // This tells WindowsGSM how many ports should skip after installation
